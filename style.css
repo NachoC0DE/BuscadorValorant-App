@@ -1,0 +1,399 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 22px;
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+body {
+  background-color: #3a3a3a;
+  margin: 0;
+  padding-top: 50px;
+
+}
+
+.api{
+  padding-top: 20px;
+  text-align: center;
+  color: #bcb4b4;;
+}
+
+.api a{
+  padding: 10px;
+}
+
+.api a:visited{
+  color: #bcb4b4;;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1.1;
+}
+
+h1::first-letter{
+  font-size: 60px;
+  color: #242323;
+}
+
+
+#app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  padding: 0;
+}
+
+.form{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.form h1{
+  padding-bottom: 20px;
+  margin: 2px;
+}
+
+.form input[type="text"] {
+  display: inline-block;
+  padding: 20px;
+  margin-bottom: 10px;
+  border: 1px solid #bcb4b4;
+  border-radius: 10px;
+  width: 350px;
+  text-align: center;
+}
+
+.form input[type="text"]:focus{
+  outline: none;
+  border: 2px solid #e0dada;
+}
+
+
+
+
+.form input[type="button"] {
+  cursor: pointer;
+  width: 150px;
+  margin: 5px;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+}
+
+.form input[type="button"]:hover{
+  transition: .3s;
+}
+.appValorant{
+  box-shadow: rgba(0, 0, 0, .7) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  overflow: hidden;
+  border-radius: 5%;
+  padding-top: 20px;
+  background-color: rgba(169, 170, 175, 0.759);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+.container{
+  padding-top: 20px;
+  margin: 0 auto;
+  max-width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/*Contenedor de nombre,apodo,rol y descripcion*/
+.containerName{
+  text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  max-width:40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerName .nombreChamp{
+  color: #fff;
+  padding: 2px;
+  position: relative;
+  font-size: 70px;
+  margin: 0;
+}
+
+.containerName .nombreChamp::first-letter{
+  font-size: 90px;
+  color: #fffbfb;
+}
+
+.containerName .nombreChamp::after{
+  content: "";
+  display: block;
+  width: 795px;
+  height: 2px;
+  background: rgb(238, 233, 233);
+  top: 10px;
+  position: absolute;
+}
+
+.containerName .nombreChamp::before{
+  content: "";
+  display: block;
+  width: 2px;
+  left: -20px;
+  height: 230px;
+  padding: 2px;
+  background: rgb(255, 255, 255);
+  top: 10px;
+  position: absolute;
+}
+
+
+
+.containerName .apodoChamp{
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin: 0;
+  font-size: 30px;
+  color: #fff8f8;
+}
+
+.containerName .rolChamp{
+  font-size: 35px;
+  text-align: center;
+  position: relative;
+}
+
+
+
+.containerName .descriptionChamp{
+  max-width: 600px;
+  position: relative;
+  padding-top: 15px;
+  margin: 0;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+
+.containerName .descriptionChamp::after{
+  content: "";
+  display: block;
+  width: 700px;
+  height: 2px;
+  bottom: 1px;
+  padding: 2px;
+  background: rgb(247, 246, 246);
+  position: absolute;
+}
+
+
+/*Contenedor de imagen*/
+.contenedorImagen{
+  position: relative;
+  display: flex;
+  margin: 0;
+  margin: 10px;
+  align-items: center;
+}
+
+.contenedorImagen::before{
+  content: "";
+  display: block;
+  width: 2px;
+  height: 320px;
+  top: -47px;
+  left: 300px;
+  padding: 1px;
+  background: rgb(255, 255, 255);
+  position: absolute;
+}
+
+.contenedorImagen .logoChamp{
+  
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 6px -1px, rgba(0, 0, 0, 0.3) 0px 5px 5px -1px;
+  width: 250px;
+  border-radius: 20%;
+}
+
+
+
+/*Container habilidades*/
+
+.contenedorHabilidades{
+  cursor: pointer;
+  overflow: hidden;
+  padding-top: 20px;
+  text-align: center;
+  max-width: 1500px;
+  display: flex;
+}
+
+
+.contenedorHabilidades img{
+  opacity: .5;
+  width: 15%;
+}
+
+
+.contenedorHabilidades .habilidadContenedor{
+  background-color: hsl(0, 0%, 14%, .4);
+    padding-top: 10px;
+    width: 100%;
+    padding: 2px;
+    opacity: .7;
+    margin: 0;
+}
+
+
+.contenedorHabilidades .habilidadContenedor .titleHabilidad{
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 13px;
+
+}
+
+.contenedorHabilidades .habilidadContenedor p{
+  font-size: 11px;
+}
+
+.contenedorHabilidades .habilidadContenedor:hover{
+  transition: .3s;
+  width: 101%;
+  background-color: hsl(0, 3%, 6%);
+  opacity: 1;
+}
+
+.contenedorHabilidades img:hover{
+  opacity: 1;
+}
+
+@media screen and (max-width:1110px){
+  .containerName .nombreChamp::after{
+    width: 748px;
+  }
+
+}
+
+
+@media screen and (max-width:1070px){
+
+  .containerName .nombreChamp::after{
+    width: 724px;
+  }
+
+  .containerName .descriptionChamp::after{
+    width: 700px;
+  }
+
+
+}
+
+@media screen and (max-width:970px){
+  .containerName .nombreChamp::after{
+    width: 650px;
+  }
+  .containerName .descriptionChamp::after{
+    width: 600px;
+  }
+  
+}
+
+@media screen and (max-width:930px){
+
+  .containerName .nombreChamp::after{
+    width: 670px;
+  }
+
+  .containerName .descriptionChamp::after{
+    width: 730px;
+  }
+
+}
+
+@media screen and (max-width:870px){
+
+  .containerName .nombreChamp::after{
+    width: 600px;
+  }
+
+  .containerName .descriptionChamp::after{
+    width: 500px;
+  }
+
+}
+
+
+
+@media screen and (max-width:780px){
+
+  .containerName .nombreChamp::after{
+    width: 550px;
+  }
+
+  .containerName .descriptionChamp::after{
+    width: 550px;
+  }
+
+}
+
+
+
+@media screen and (max-width:680px){
+
+  .containerName .nombreChamp::after{
+    width: 450px;
+  }
+
+
+  .contenedorImagen::before{
+    top: -80px;
+    left: 250px;
+  }
+
+  .containerName .descriptionChamp::after{
+    width: 400px;
+  }
+
+}
+
+@media screen and (max-width:530px){
+  .containerName .nombreChamp::after{
+    width: 400px;
+  }
+
+  .contenedorImagen::before{
+    left: 230px;
+  }
+
+  .containerName .descriptionChamp::after{
+    width: 300px;
+  }
+}
+
+
+@media screen and (max-width:440px){
+
+  .containerName .nombreChamp::after{
+    width: 300px;
+  }
+
+  .contenedorImagen::before{
+    left: 200px;
+  }
+}
